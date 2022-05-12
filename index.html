@@ -48,20 +48,27 @@
 	<body>
 		<div class="floating-box">
 			<img class="logo" src="dist/img/logo.png" alt="Circus Logo" />
+
 			<div class="foreground">
-				<h1>Hello World!</h1>
-				<p>Yep, you've got the Circus Starter project working.</p>
-				<p>Congratulations! You're ready to code.</p>
-				<p class="github">
-					<a target="_blank" rel="noopener" href="https://github.com/CreativeCircus/circus-starter"
-						>https://github.com/CreativeCircus/circus-starter</a
-					>
-				</p>
-				<code>1.10.0</code>
+
+				<form>
+					<div>
+						<label>Name</label>
+						<input name="name" data-limit data-max />
+					</div>
+
+					<div>
+						<label>Email</label>
+						<input name="email" data-limit data-max="30" />
+					</div>
+
+				</form>
+
 			</div>
 			<div class="background"></div>
 		</div>
 
+		<script src="dist/js/char-limiter.js"></script>
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>
