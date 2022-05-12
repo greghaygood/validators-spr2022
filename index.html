@@ -54,12 +54,12 @@
 				<form>
 					<div>
 						<label>Name</label>
-						<input name="name" data-limit data-max />
+						<input name="name" data-validate="required min-length full-name" data-min-length="8" />
 					</div>
 
 					<div>
 						<label>Email</label>
-						<input name="email" data-limit data-max="30" />
+						<input name="email" data-validate="required email" />
 					</div>
 
 				</form>
@@ -67,8 +67,12 @@
 			</div>
 			<div class="background"></div>
 		</div>
-
 		<script src="dist/js/char-limiter.js"></script>
+
+		<script src="dist/js/base-validator.js"></script>
+		<script src="dist/js/validators/required.js"></script>
+		<script src="dist/js/validators/min-length.js"></script>
+		<script src="dist/js/validations.js"></script>
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>
